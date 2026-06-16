@@ -7,7 +7,7 @@ import React from 'react';
 const ApplicationsPage = async () => {
   const user = await getSessionUser();
   const jobs = await getApplicationsByApplicant(user.id);
-
+console.log(jobs)
   // Helper function to cleanly format dates
   const formatDate = (dateString) => {
     if (!dateString) return 'N/A';
